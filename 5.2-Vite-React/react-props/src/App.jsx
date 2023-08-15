@@ -9,13 +9,14 @@ import cuatro from './assets/img/cuatro.jpg'
 import cinco from './assets/img/cinco.jpg'
 import seis from './assets/img/seis.jpg'
 import Header from './components/Header'
+import SectionImg from './components/SectionImg'
 
 function App () {
   return (
     <>
       {/* <HolaMundo name='Iván' edad={22} /> */}
       <Header title='Hola 25-web-d-sureste' subtitle='Esto es React' buttonText='Click Me' />
-      <section className='wave-contenedor website'>
+      {/* <section className='wave-contenedor website'>
         <img src={ilustracion1} alt='' />
         <div className='contenedor-textos-main'>
           <h2 className='titulo left'>
@@ -24,7 +25,8 @@ function App () {
           <p className='parrafo'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum velit neque necessitatibus exercitationem rem quisquam, ipsa fuga, laborum similique dolorem accusamus adipisci quam eaque nulla voluptas vitae error reiciendis.</p>
           <a href='' className='cta'>Learn more</a>
         </div>
-      </section>
+      </section> */}
+      <SectionImg sectionClass='wave-contenedor website' img={ilustracion1} divClass='contenedor-textos-main' h2Class='titulo left' />
 
       <section className='info'>
         <div className='contenedor'>

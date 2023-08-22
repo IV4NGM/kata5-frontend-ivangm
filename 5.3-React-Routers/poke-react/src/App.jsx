@@ -1,9 +1,15 @@
 import './App.css'
+import Navbar from './components/Navbar'
+import { BrowserRouter } from 'react-router-dom'
+import RouterIndex from './routes/RouterIndex'
 
-function App() {
+function App () {
   return (
     <>
-      <div> App </div>
+      <BrowserRouter>
+        <Navbar />
+        <RouterIndex />
+      </BrowserRouter>
     </>
   )
 }
